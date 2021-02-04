@@ -6,7 +6,7 @@ body {
 }
 
 div {
-  width: 75%;
+  width: 85%;
   margin: 10px auto 80px auto;
 }
 
@@ -117,7 +117,25 @@ a {
   text-align: left;
 }
 
-@media (min-width:900px) {
+.mynavbar {
+  background-color: #FC3C84;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f5b24c;
+}
+
+.navbar-collapse {
+  margin: 10px auto;
+}
+
+@media (min-width:768px) {
   div {
     width: 55%;
   }
