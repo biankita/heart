@@ -13,7 +13,7 @@ div {
 header {
   background-color: #d1ebff;
   width: 100%;
-  height: 270px;
+  height: 250px;
   padding-top: 15px;
 }
 
@@ -21,7 +21,7 @@ h1 {
   color: #FC3C84;
   font-family: 'Bad Script', cursive;
   font-size: 3em;
-  margin: 10px auto 0 auto;
+  margin: 10px auto;
 }
 
 h2 {
@@ -30,13 +30,14 @@ h2 {
   font-size: 1.8em;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 30px;
+  font-weight: 500;
 }
 
 h3 {
   color: #11999E;
   font-size: 1.3em;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 header img {
@@ -49,6 +50,8 @@ hr {
   border-width: 7px;
   border-color: #11999E;
   margin: 60px auto;
+  background-color: transparent;
+  opacity: 1;
 }
 
 footer {
@@ -71,7 +74,7 @@ a {
   color: #11999E;
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   margin: 0px auto 10px auto;
 }
 
@@ -119,6 +122,7 @@ a {
 
 .mynavbar {
   background-color: #FC3C84;
+  justify-content: flex-end;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -132,15 +136,28 @@ a {
 }
 
 .navbar-collapse {
-  margin: 10px auto;
+  margin: 0;
 }
 
-@media (min-width:768px) {
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media (min-width: 992px) {
   div {
     width: 55%;
   }
 
   h3 {
-    font-weight: 100;
+    font-weight: 300;
   }
+
+  .subtitle {
+    font-weight: 300;
+  }
+
+.navbar-expand-lg .navbar-collapse {
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 60px;
 }
