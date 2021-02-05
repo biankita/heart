@@ -98,7 +98,7 @@ a {
 
 .quote {
   margin: 50px auto;
-  width: 45%;
+  width: 75%;
   background-color: #fcd79f;
   border-radius: 30px;
   padding: 15px 20px;
@@ -154,6 +154,10 @@ a {
 
   .subtitle {
     font-weight: 300;
+  }
+
+  .quote {
+    width: 45%;
   }
 
 .navbar-expand-lg .navbar-collapse {
