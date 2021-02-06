@@ -15,6 +15,7 @@ header {
   width: 100%;
   height: 250px;
   padding-top: 15px;
+  position: relative;
 }
 
 h1 {
@@ -68,6 +69,32 @@ p {
 
 a {
   color: #FC3C84;
+}
+
+/* Heading */
+.dove_img {
+  width: 80px;
+  position: absolute;
+}
+
+.dove_leftimg1 {
+  left: 10%;
+  bottom: 10%;
+  width: 60px;
+}
+
+.dove_leftimg2 {
+  width: 50px;
+  left: 20%;
+  top: 30%;
+  visibility: hidden;
+}
+
+.dove_righttimg {
+  transform: scaleX(-1);
+  right: 10%;
+  top: 10%;
+  visibility: hidden;
 }
 
 .subtitle {
@@ -156,16 +183,21 @@ a {
     font-weight: 300;
   }
 
-  .subtitle {
-    font-weight: 300;
-  }
-
   .quote {
     width: 45%;
   }
 
-.navbar-expand-lg .navbar-collapse {
-  flex-direction: row;
-  justify-content: flex-end;
-  padding-right: 60px;
-}
+  .navbar-expand-lg .navbar-collapse {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 60px;
+  }
+
+  .dove_leftimg2, .dove_righttimg {
+    visibility: visible;
+  }
+
+  .dove_leftimg1 {
+    width: 80px;
+    bottom: 4%;
+  }
